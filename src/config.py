@@ -1,4 +1,4 @@
-import os
+﻿import os
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -11,7 +11,7 @@ load_dotenv(BASE_DIR / ".env")
 
 
 # -----------------------------
-# Ollama
+# Ollama / LLM
 # -----------------------------
 
 OLLAMA_BASE_URL = os.getenv(
@@ -24,6 +24,13 @@ LLM_MODEL = os.getenv(
     "llama3.1:8b"
 )
 
+# Google embedding configuration
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "").strip()
+GOOGLE_EMBEDDING_MODEL = "gemini-embedding-001"
+GOOGLE_EMBEDDING_DIMENSIONS = 768
+GOOGLE_COLLECTION_NAME = "procure_documents_google"
+
+# Keep legacy setting for compatibility with existing modules
 EMBEDDING_MODEL = os.getenv(
     "EMBEDDING_MODEL",
     "nomic-embed-text"
@@ -46,6 +53,7 @@ QDRANT_PORT = int(
     os.getenv("QDRANT_PORT", "6333")
 )
 
+# Preserve the original collection
 COLLECTION_NAME = os.getenv(
     "QDRANT_COLLECTION",
     "procure_documents"
@@ -69,9 +77,11 @@ print("================================")
 print("Procure Bot Configuration")
 print("================================")
 print("LLM Model       :", LLM_MODEL)
-print("Embedding Model :", EMBEDDING_MODEL)
+print("Embedding Model :", GOOGLE_EMBEDDING_MODEL)
 print("Ollama URL      :", OLLAMA_BASE_URL)
 print("Qdrant Host     :", QDRANT_HOST)
 print("Qdrant Port     :", QDRANT_PORT)
-print("Collection      :", COLLECTION_NAME)
+print("Original Collection :", COLLECTION_NAME)
+print("Google Collection   :", GOOGLE_COLLECTION_NAME)
+print("Google API Key configured:", bool(GOOGLE_API_KEY))
 print("================================")

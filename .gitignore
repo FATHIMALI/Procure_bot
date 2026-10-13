@@ -45,3 +45,7 @@ What is the total procurement value.txt
 [29092026].txt
 
 [[]29092026].txt
+
+# Local screenshots and backups
+Screenshot_local_backup/
+src/*_backup.py

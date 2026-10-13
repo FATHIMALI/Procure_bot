@@ -18,3 +18,4 @@ pypdf
 watchdog
 httpx
 groq
+google-genai

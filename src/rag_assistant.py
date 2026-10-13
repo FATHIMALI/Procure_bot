@@ -1,11 +1,15 @@
 import re
-import ollama
 import os
+from google import genai
+from google.genai import types
 from groq import Groq
 from qdrant_client import QdrantClient
 
 from src.config import (
-    EMBEDDING_MODEL,
+    GOOGLE_API_KEY,
+    GOOGLE_EMBEDDING_MODEL,
+    GOOGLE_EMBEDDING_DIMENSIONS,
+    GOOGLE_COLLECTION_NAME,
     LLM_MODEL,
     QDRANT_HOST,
     QDRANT_PORT,
@@ -15,22 +19,24 @@ from src.config import (
 )
 
 
-# ============================================================
-# RETRIEVE DOCUMENTS
-# ============================================================
-
 def retrieve_documents(query, top_k=5):
+
+    if not GOOGLE_API_KEY:
+        raise RuntimeError("GOOGLE_API_KEY is not configured.")
 
     if QDRANT_URL:
         client = QdrantClient(
             url=QDRANT_URL,
-            api_key=QDRANT_API_KEY or None
+            api_key=QDRANT_API_KEY or None,
+            timeout=30,
         )
     else:
         client = QdrantClient(
             host=QDRANT_HOST,
-            port=QDRANT_PORT
+            port=QDRANT_PORT,
+            timeout=30,
         )
+
     # ========================================================
     # EXACT PO NUMBER DETECTION
     # ========================================================
@@ -42,13 +48,12 @@ def retrieve_documents(query, top_k=5):
 
     # ========================================================
     # EXACT PO RETRIEVAL
+    # Keep the original collection for this lookup.
     # ========================================================
 
     if po_match:
-
         po_id = po_match.group(0)
 
-        print()
         print(f"Exact PO detected: {po_id}")
 
         search_result = client.scroll(
@@ -57,48 +62,50 @@ def retrieve_documents(query, top_k=5):
                 "must": [
                     {
                         "key": "po_id",
-                        "match": {
-                            "value": po_id
-                        }
+                        "match": {"value": po_id}
                     }
                 ]
             },
             limit=top_k,
-            with_payload=True
+            with_payload=True,
         )
 
         points = search_result[0]
 
         if points:
-
             print(f"Exact PO retrieved: {po_id}")
-
             return points
 
         print(f"PO {po_id} was not found.")
-
         return []
 
     # ========================================================
-    # SEMANTIC SEARCH FOR GENERAL QUESTIONS
+    # GOOGLE EMBEDDING + GOOGLE QDRANT COLLECTION
     # ========================================================
 
-    response = ollama.embed(
-        model=EMBEDDING_MODEL,
-        input=query
+    google_client = genai.Client(api_key=GOOGLE_API_KEY)
+
+    response = google_client.models.embed_content(
+        model=GOOGLE_EMBEDDING_MODEL,
+        contents=query,
+        config=types.EmbedContentConfig(
+            output_dimensionality=GOOGLE_EMBEDDING_DIMENSIONS
+        ),
     )
 
-    query_vector = response["embeddings"][0]
+    query_vector = response.embeddings[0].values
+
+    if len(query_vector) != GOOGLE_EMBEDDING_DIMENSIONS:
+        raise ValueError("Google query embedding dimensions are incorrect.")
 
     search_result = client.query_points(
-        collection_name=COLLECTION_NAME,
+        collection_name=GOOGLE_COLLECTION_NAME,
         query=query_vector,
         limit=top_k,
-        with_payload=True
+        with_payload=True,
     )
 
     return search_result.points
-
 
 # ============================================================
 # PARSE PROCUREMENT RECORD

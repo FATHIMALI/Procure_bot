@@ -135,8 +135,34 @@ def analytics_answer(query):
             f"This supplier has {int(result['total_orders']):,} orders "
             f"and {int(result['defective_units']):,} defective units."
         )
-
     # ---------------------------------------------------------
+    # ---------------------------------------------------------
+    # 4A. SUPPLIERS WITH HIGH DEFECT RATES
+    # ---------------------------------------------------------
+    if (
+        "suppliers have high defect rates" in query_lower
+        or "supplier high defect rates" in query_lower
+        or "high defect rate suppliers" in query_lower
+        or "which suppliers have high defect" in query_lower
+    ):
+        summary = supplier_defect_summary()
+
+        if summary is None or summary.empty:
+            return "No supplier defect data is available."
+
+        answer = "Supplier Defect Rate Summary:\n\n"
+
+        for _, row in summary.iterrows():
+            answer += (
+                f"Supplier: {row['supplier']}\n"
+                f"  Overall Defect Rate: "
+                f"{row['overall_defect_rate']:.2f}%\n"
+                f"  Total Orders: {int(row['total_orders']):,}\n"
+                f"  Defective Units: {int(row['defective_units']):,}\n\n"
+            )
+
+        return answer.strip()
+
     # 5. SPECIFIC SUPPLIER OVERALL DEFECT RATE
     # ---------------------------------------------------------
     if (
@@ -149,7 +175,6 @@ def analytics_answer(query):
 
         if summary is None or summary.empty:
             return "No supplier defect data is available."
-
         matched_supplier = None
 
         for supplier in summary["supplier"].tolist():
