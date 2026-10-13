@@ -1,0 +1,27 @@
+Purchase Order: PO-00041
+
+Supplier: Beta_Supplies
+
+Item Category: Electronics
+
+Order Date: 2022-04-15
+
+Delivery Date: 2022-04-27
+
+Order Status: Delivered
+
+Quantity: 1132
+
+Unit Price: 17.78
+
+Negotiated Price: 15.36
+
+Defective Units: 96
+
+Compliance: Yes
+
+Total Procurement Value: 17387.52
+
+Negotiation Savings: 2739.44
+
+Defect Rate: 8.48%

@@ -1,0 +1,27 @@
+Purchase Order: PO-00024
+
+Supplier: Beta_Supplies
+
+Item Category: Office Supplies
+
+Order Date: 2023-10-28
+
+Delivery Date: 2023-11-03
+
+Order Status: Partially Delivered
+
+Quantity: 393
+
+Unit Price: 72.53
+
+Negotiated Price: 66.31
+
+Defective Units: 42
+
+Compliance: No
+
+Total Procurement Value: 26059.83
+
+Negotiation Savings: 2444.46
+
+Defect Rate: 10.69%

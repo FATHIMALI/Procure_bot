@@ -1,0 +1,27 @@
+Purchase Order: PO-00042
+
+Supplier: Beta_Supplies
+
+Item Category: Office Supplies
+
+Order Date: 2022-04-05
+
+Delivery Date: 2022-04-14
+
+Order Status: Delivered
+
+Quantity: 560
+
+Unit Price: 81.14
+
+Negotiated Price: 77.87
+
+Defective Units: 34
+
+Compliance: No
+
+Total Procurement Value: 43607.2
+
+Negotiation Savings: 1831.2
+
+Defect Rate: 6.07%

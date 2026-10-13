@@ -1,0 +1,27 @@
+Purchase Order: PO-00013
+
+Supplier: Beta_Supplies
+
+Item Category: Electronics
+
+Order Date: 2023-03-09
+
+Delivery Date: 2023-03-26
+
+Order Status: Pending
+
+Quantity: 5000
+
+Unit Price: 86.74
+
+Negotiated Price: 74.86
+
+Defective Units: 51
+
+Compliance: Yes
+
+Total Procurement Value: 374300.0
+
+Negotiation Savings: 59400.0
+
+Defect Rate: 1.02%

@@ -1,0 +1,27 @@
+Purchase Order: PO-00015
+
+Supplier: Delta_Logistics
+
+Item Category: Electronics
+
+Order Date: 2022-01-31
+
+Delivery Date: 2022-02-18
+
+Order Status: Pending
+
+Quantity: 5000
+
+Unit Price: 54.5
+
+Negotiated Price: 48.45
+
+Defective Units: 22
+
+Compliance: Yes
+
+Total Procurement Value: 242250.0
+
+Negotiation Savings: 30250.0
+
+Defect Rate: 0.44%

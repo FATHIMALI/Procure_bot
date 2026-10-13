@@ -1,0 +1,27 @@
+Purchase Order: PO-00046
+
+Supplier: Alpha_Inc
+
+Item Category: Electronics
+
+Order Date: 2022-12-19
+
+Delivery Date: nan
+
+Order Status: Delivered
+
+Quantity: 1025
+
+Unit Price: 21.11
+
+Negotiated Price: 19.25
+
+Defective Units: 15
+
+Compliance: Yes
+
+Total Procurement Value: 19731.25
+
+Negotiation Savings: 1906.5
+
+Defect Rate: 1.46%

@@ -1,0 +1,27 @@
+Purchase Order: PO-00034
+
+Supplier: Alpha_Inc
+
+Item Category: Packaging
+
+Order Date: 2023-12-16
+
+Delivery Date: 2023-12-17
+
+Order Status: Delivered
+
+Quantity: 1387
+
+Unit Price: 48.71
+
+Negotiated Price: 43.71
+
+Defective Units: 27
+
+Compliance: Yes
+
+Total Procurement Value: 60625.77
+
+Negotiation Savings: 6935.0
+
+Defect Rate: 1.95%

@@ -1,0 +1,27 @@
+Purchase Order: PO-00004
+
+Supplier: Beta_Supplies
+
+Item Category: Packaging
+
+Order Date: 2022-10-09
+
+Delivery Date: 2022-10-28
+
+Order Status: Delivered
+
+Quantity: 1344
+
+Unit Price: 99.85
+
+Negotiated Price: 95.52
+
+Defective Units: 112
+
+Compliance: Yes
+
+Total Procurement Value: 128378.88
+
+Negotiation Savings: 5819.52
+
+Defect Rate: 8.33%

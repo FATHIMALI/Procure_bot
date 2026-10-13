@@ -1,0 +1,27 @@
+Purchase Order: PO-00037
+
+Supplier: Epsilon_Group
+
+Item Category: Office Supplies
+
+Order Date: 2022-10-12
+
+Delivery Date: 2022-10-31
+
+Order Status: Pending
+
+Quantity: 797
+
+Unit Price: 99.54
+
+Negotiated Price: 91.37
+
+Defective Units: 18
+
+Compliance: Yes
+
+Total Procurement Value: 72821.89
+
+Negotiation Savings: 6511.49
+
+Defect Rate: 2.26%

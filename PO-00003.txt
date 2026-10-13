@@ -1,0 +1,27 @@
+Purchase Order: PO-00003
+
+Supplier: Gamma_Co
+
+Item Category: MRO
+
+Order Date: 2022-01-26
+
+Delivery Date: 2022-02-15
+
+Order Status: Delivered
+
+Quantity: 910
+
+Unit Price: 95.51
+
+Negotiated Price: 92.26
+
+Defective Units: 41
+
+Compliance: Yes
+
+Total Procurement Value: 83956.6
+
+Negotiation Savings: 2957.5
+
+Defect Rate: 4.51%

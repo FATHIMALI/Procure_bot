@@ -1,0 +1,27 @@
+Purchase Order: PO-00005
+
+Supplier: Delta_Logistics
+
+Item Category: Raw Materials
+
+Order Date: 2022-09-08
+
+Delivery Date: 2022-09-20
+
+Order Status: Delivered
+
+Quantity: 1180
+
+Unit Price: 64.07
+
+Negotiated Price: 60.53
+
+Defective Units: 171
+
+Compliance: No
+
+Total Procurement Value: 71425.4
+
+Negotiation Savings: 4177.2
+
+Defect Rate: 14.49%

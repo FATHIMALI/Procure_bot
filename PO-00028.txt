@@ -1,0 +1,27 @@
+Purchase Order: PO-00028
+
+Supplier: Epsilon_Group
+
+Item Category: Raw Materials
+
+Order Date: 2022-08-14
+
+Delivery Date: 2022-08-23
+
+Order Status: Delivered
+
+Quantity: 435
+
+Unit Price: 17.13
+
+Negotiated Price: 15.84
+
+Defective Units: 8
+
+Compliance: Yes
+
+Total Procurement Value: 6890.4
+
+Negotiation Savings: 561.15
+
+Defect Rate: 1.84%

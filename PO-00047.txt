@@ -1,0 +1,27 @@
+Purchase Order: PO-00047
+
+Supplier: Beta_Supplies
+
+Item Category: Raw Materials
+
+Order Date: 2023-09-11
+
+Delivery Date: 2023-09-18
+
+Order Status: Delivered
+
+Quantity: 1856
+
+Unit Price: 59.77
+
+Negotiated Price: 50.81
+
+Defective Units: 191
+
+Compliance: Yes
+
+Total Procurement Value: 94303.36
+
+Negotiation Savings: 16629.76
+
+Defect Rate: 10.29%

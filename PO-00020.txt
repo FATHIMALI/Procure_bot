@@ -1,0 +1,27 @@
+Purchase Order: PO-00020
+
+Supplier: Delta_Logistics
+
+Item Category: Raw Materials
+
+Order Date: 2023-09-09
+
+Delivery Date: 2023-09-24
+
+Order Status: Delivered
+
+Quantity: 180
+
+Unit Price: 45.74
+
+Negotiated Price: 38.89
+
+Defective Units: 0
+
+Compliance: No
+
+Total Procurement Value: 7000.2
+
+Negotiation Savings: 1233.0
+
+Defect Rate: 0.0%
