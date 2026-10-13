@@ -1,0 +1,27 @@
+Purchase Order: PO-00016
+
+Supplier: Beta_Supplies
+
+Item Category: Packaging
+
+Order Date: 2022-04-06
+
+Delivery Date: 2022-04-21
+
+Order Status: Delivered
+
+Quantity: 5000
+
+Unit Price: 15.41
+
+Negotiated Price: 15.12
+
+Defective Units: 0
+
+Compliance: Yes
+
+Total Procurement Value: 75600.0
+
+Negotiation Savings: 1450.0
+
+Defect Rate: 0.0%

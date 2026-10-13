@@ -1,0 +1,27 @@
+Purchase Order: PO-00002
+
+Supplier: Delta_Logistics
+
+Item Category: Office Supplies
+
+Order Date: 2022-04-25
+
+Delivery Date: 2022-05-05
+
+Order Status: Delivered
+
+Quantity: 1509
+
+Unit Price: 39.32
+
+Negotiated Price: 37.34
+
+Defective Units: 235
+
+Compliance: Yes
+
+Total Procurement Value: 56346.06
+
+Negotiation Savings: 2987.82
+
+Defect Rate: 15.57%

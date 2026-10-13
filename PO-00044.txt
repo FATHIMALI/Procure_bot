@@ -1,0 +1,27 @@
+Purchase Order: PO-00044
+
+Supplier: Epsilon_Group
+
+Item Category: MRO
+
+Order Date: 2022-04-10
+
+Delivery Date: 2022-04-17
+
+Order Status: Delivered
+
+Quantity: 1549
+
+Unit Price: 48.9
+
+Negotiated Price: 42.42
+
+Defective Units: 48
+
+Compliance: Yes
+
+Total Procurement Value: 65708.58
+
+Negotiation Savings: 10037.52
+
+Defect Rate: 3.1%

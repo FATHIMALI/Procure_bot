@@ -1,0 +1,27 @@
+Purchase Order: PO-00021
+
+Supplier: Epsilon_Group
+
+Item Category: Electronics
+
+Order Date: 2022-01-28
+
+Delivery Date: 2022-02-12
+
+Order Status: Cancelled
+
+Quantity: 1735
+
+Unit Price: 20.54
+
+Negotiated Price: 19.69
+
+Defective Units: 49
+
+Compliance: Yes
+
+Total Procurement Value: 34162.15
+
+Negotiation Savings: 1474.75
+
+Defect Rate: 2.82%

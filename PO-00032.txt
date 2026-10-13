@@ -1,0 +1,27 @@
+Purchase Order: PO-00032
+
+Supplier: Alpha_Inc
+
+Item Category: Office Supplies
+
+Order Date: 2022-01-07
+
+Delivery Date: 2022-01-15
+
+Order Status: Delivered
+
+Quantity: 1234
+
+Unit Price: 17.64
+
+Negotiated Price: 15.66
+
+Defective Units: 26
+
+Compliance: Yes
+
+Total Procurement Value: 19324.44
+
+Negotiation Savings: 2443.32
+
+Defect Rate: 2.11%

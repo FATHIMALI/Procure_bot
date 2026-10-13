@@ -1,0 +1,27 @@
+Purchase Order: PO-00019
+
+Supplier: Gamma_Co
+
+Item Category: Raw Materials
+
+Order Date: 2023-06-02
+
+Delivery Date: 2023-06-05
+
+Order Status: Partially Delivered
+
+Quantity: 1737
+
+Unit Price: 97.53
+
+Negotiated Price: 87.37
+
+Defective Units: 79
+
+Compliance: Yes
+
+Total Procurement Value: 151761.69
+
+Negotiation Savings: 17647.92
+
+Defect Rate: 4.55%

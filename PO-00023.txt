@@ -1,0 +1,27 @@
+Purchase Order: PO-00023
+
+Supplier: Epsilon_Group
+
+Item Category: MRO
+
+Order Date: 2022-07-23
+
+Delivery Date: 2022-08-08
+
+Order Status: Delivered
+
+Quantity: 819
+
+Unit Price: 80.89
+
+Negotiated Price: 77.03
+
+Defective Units: 29
+
+Compliance: Yes
+
+Total Procurement Value: 63087.57
+
+Negotiation Savings: 3161.34
+
+Defect Rate: 3.54%

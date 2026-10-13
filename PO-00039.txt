@@ -1,0 +1,27 @@
+Purchase Order: PO-00039
+
+Supplier: Epsilon_Group
+
+Item Category: Office Supplies
+
+Order Date: 2022-08-09
+
+Delivery Date: 2022-08-23
+
+Order Status: Delivered
+
+Quantity: 1634
+
+Unit Price: 80.53
+
+Negotiated Price: 76.15
+
+Defective Units: 50
+
+Compliance: Yes
+
+Total Procurement Value: 124429.1
+
+Negotiation Savings: 7156.92
+
+Defect Rate: 3.06%

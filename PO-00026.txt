@@ -1,0 +1,27 @@
+Purchase Order: PO-00026
+
+Supplier: Epsilon_Group
+
+Item Category: Packaging
+
+Order Date: 2023-07-13
+
+Delivery Date: 2023-07-24
+
+Order Status: Delivered
+
+Quantity: 1487
+
+Unit Price: 19.15
+
+Negotiated Price: 17.24
+
+Defective Units: 0
+
+Compliance: Yes
+
+Total Procurement Value: 25635.88
+
+Negotiation Savings: 2840.17
+
+Defect Rate: 0.0%

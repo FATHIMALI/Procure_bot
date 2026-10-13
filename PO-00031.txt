@@ -1,0 +1,27 @@
+Purchase Order: PO-00031
+
+Supplier: Gamma_Co
+
+Item Category: Electronics
+
+Order Date: 2022-10-12
+
+Delivery Date: 2022-10-26
+
+Order Status: Delivered
+
+Quantity: 326
+
+Unit Price: 18.1
+
+Negotiated Price: 15.92
+
+Defective Units: 0
+
+Compliance: No
+
+Total Procurement Value: 5189.92
+
+Negotiation Savings: 710.68
+
+Defect Rate: 0.0%

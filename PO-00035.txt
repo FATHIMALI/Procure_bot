@@ -1,0 +1,27 @@
+Purchase Order: PO-00035
+
+Supplier: Alpha_Inc
+
+Item Category: MRO
+
+Order Date: 2023-03-09
+
+Delivery Date: 2023-03-17
+
+Order Status: Delivered
+
+Quantity: 71
+
+Unit Price: 46.39
+
+Negotiated Price: 43.18
+
+Defective Units: 0
+
+Compliance: Yes
+
+Total Procurement Value: 3065.78
+
+Negotiation Savings: 227.91
+
+Defect Rate: 0.0%

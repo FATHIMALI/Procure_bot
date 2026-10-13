@@ -1,0 +1,27 @@
+Purchase Order: PO-00025
+
+Supplier: Beta_Supplies
+
+Item Category: MRO
+
+Order Date: 2023-12-20
+
+Delivery Date: 2024-01-01
+
+Order Status: Delivered
+
+Quantity: 1565
+
+Unit Price: 21.3
+
+Negotiated Price: 20.09
+
+Defective Units: 161
+
+Compliance: Yes
+
+Total Procurement Value: 31440.85
+
+Negotiation Savings: 1893.65
+
+Defect Rate: 10.29%

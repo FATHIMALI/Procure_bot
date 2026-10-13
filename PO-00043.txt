@@ -1,0 +1,27 @@
+Purchase Order: PO-00043
+
+Supplier: Gamma_Co
+
+Item Category: Electronics
+
+Order Date: 2023-01-25
+
+Delivery Date: 2023-02-02
+
+Order Status: Delivered
+
+Quantity: 1755
+
+Unit Price: 63.87
+
+Negotiated Price: 58.4
+
+Defective Units: 85
+
+Compliance: Yes
+
+Total Procurement Value: 102492.0
+
+Negotiation Savings: 9599.85
+
+Defect Rate: 4.84%

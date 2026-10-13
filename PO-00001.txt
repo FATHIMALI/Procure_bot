@@ -1,0 +1,27 @@
+Purchase Order: PO-00001
+
+Supplier: Alpha_Inc
+
+Item Category: Office Supplies
+
+Order Date: 2023-10-17
+
+Delivery Date: 2023-10-25
+
+Order Status: Cancelled
+
+Quantity: 1176
+
+Unit Price: 20.13
+
+Negotiated Price: 17.81
+
+Defective Units: 0
+
+Compliance: Yes
+
+Total Procurement Value: 20944.56
+
+Negotiation Savings: 2728.32
+
+Defect Rate: 0.0%

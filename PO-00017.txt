@@ -1,0 +1,27 @@
+Purchase Order: PO-00017
+
+Supplier: Delta_Logistics
+
+Item Category: MRO
+
+Order Date: 2022-08-12
+
+Delivery Date: 2022-08-31
+
+Order Status: Delivered
+
+Quantity: 1173
+
+Unit Price: 61.54
+
+Negotiated Price: 55.49
+
+Defective Units: 172
+
+Compliance: No
+
+Total Procurement Value: 65089.77
+
+Negotiation Savings: 7096.65
+
+Defect Rate: 14.66%

@@ -1,0 +1,27 @@
+Purchase Order: PO-00014
+
+Supplier: Beta_Supplies
+
+Item Category: MRO
+
+Order Date: 2022-02-02
+
+Delivery Date: nan
+
+Order Status: Delivered
+
+Quantity: 5000
+
+Unit Price: 18.3
+
+Negotiated Price: 16.88
+
+Defective Units: 0
+
+Compliance: Yes
+
+Total Procurement Value: 84400.0
+
+Negotiation Savings: 7100.0
+
+Defect Rate: 0.0%
