@@ -1,10 +1,14 @@
 from qdrant_client import QdrantClient
 import ollama
 
-from src.config import EMBEDDING_MODEL
-
-
-COLLECTION_NAME = "procure_documents"
+from src.config import (
+    EMBEDDING_MODEL,
+    QDRANT_HOST,
+    QDRANT_PORT,
+    QDRANT_URL,
+    QDRANT_API_KEY,
+    COLLECTION_NAME,
+)
 
 
 def search_documents(query, top_k=5):
@@ -32,13 +36,20 @@ def search_documents(query, top_k=5):
         len(query_vector)
     )
 
-    # Connect to Qdrant
-    client = QdrantClient(
-        host="localhost",
-        port=6333
-    )
 
-    # Search Qdrant
+    # Connect to Qdrant
+    if QDRANT_URL:
+        client = QdrantClient(
+            url=QDRANT_URL,
+            api_key=QDRANT_API_KEY or None
+        )
+    else:
+        client = QdrantClient(
+            host=QDRANT_HOST,
+            port=QDRANT_PORT
+        )
+
+    # Search Qdrant    # Search Qdrant
     search_result = client.query_points(
         collection_name=COLLECTION_NAME,
         query=query_vector,

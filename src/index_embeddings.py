@@ -3,7 +3,15 @@ import json
 import re
 
 from qdrant_client import QdrantClient
-from qdrant_client.models import PointStruct
+from qdrant_client.models import PointStruct, VectorParams, Distance
+
+from src.config import (
+    QDRANT_URL,
+    QDRANT_API_KEY,
+    QDRANT_HOST,
+    QDRANT_PORT,
+    COLLECTION_NAME,
+)
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,9 +22,6 @@ EMBEDDINGS_FILE = (
     / "processed"
     / "embeddings.json"
 )
-
-COLLECTION_NAME = "procure_documents"
-
 
 def extract_po_id(text):
     """
@@ -48,10 +53,18 @@ def index_embeddings():
     # Connect to Qdrant
     # ---------------------------------------------------------
 
-    client = QdrantClient(
-        host="localhost",
-        port=6333
-    )
+    
+    if QDRANT_URL:
+        client = QdrantClient(
+            url=QDRANT_URL,
+            api_key=QDRANT_API_KEY or None,
+            timeout=30,
+        )
+    else:
+        client = QdrantClient(
+            host=QDRANT_HOST,
+            port=QDRANT_PORT,
+        )
 
     # ---------------------------------------------------------
     # Load embeddings

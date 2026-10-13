@@ -1,5 +1,7 @@
 import re
 import ollama
+import os
+from groq import Groq
 from qdrant_client import QdrantClient
 
 from src.config import (
@@ -7,6 +9,8 @@ from src.config import (
     LLM_MODEL,
     QDRANT_HOST,
     QDRANT_PORT,
+    QDRANT_URL,
+    QDRANT_API_KEY,
     COLLECTION_NAME,
 )
 
@@ -17,11 +21,16 @@ from src.config import (
 
 def retrieve_documents(query, top_k=5):
 
-    client = QdrantClient(
-        host=QDRANT_HOST,
-        port=QDRANT_PORT
-    )
-
+    if QDRANT_URL:
+        client = QdrantClient(
+            url=QDRANT_URL,
+            api_key=QDRANT_API_KEY or None
+        )
+    else:
+        client = QdrantClient(
+            host=QDRANT_HOST,
+            port=QDRANT_PORT
+        )
     # ========================================================
     # EXACT PO NUMBER DETECTION
     # ========================================================
@@ -635,25 +644,24 @@ Procurement Records:
 Provide a detailed but concise answer.
 """
 
-    response = ollama.chat(
-        model=LLM_MODEL,
+
+    groq_client = Groq(
+        api_key=os.getenv("GROQ_API_KEY")
+    )
+
+    response = groq_client.chat.completions.create(
+        model="openai/gpt-oss-20b",
         messages=[
             {
                 "role": "user",
                 "content": prompt
             }
         ],
-        options={
-            "temperature": 0.2,
-            "num_predict": 500
-        }
+        temperature=0.2,
+        max_tokens=500
     )
 
-    answer = response[
-        "message"
-    ][
-        "content"
-    ].strip()
+    answer = response.choices[0].message.content.strip()
 
     print()
     print("-" * 70)

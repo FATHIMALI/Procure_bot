@@ -34,6 +34,9 @@ EMBEDDING_MODEL = os.getenv(
 # Qdrant
 # -----------------------------
 
+QDRANT_URL = os.getenv("QDRANT_URL", "").strip()
+QDRANT_API_KEY = os.getenv("QDRANT_API_KEY", "").strip()
+
 QDRANT_HOST = os.getenv(
     "QDRANT_HOST",
     "localhost"
